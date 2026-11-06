@@ -616,3 +616,85 @@ gap: 5px;
     aspect-ratio: 16 / 9;
     border: 0;
 }
+/* AJUSTES PARA CELULAR */
+
+@media (max-width: 650px) {
+
+    /* Organizar a apresentação */
+
+    .apresentacao {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        height: auto;
+    }
+
+    /* Manter o texto e o botão acima */
+
+    .apresentacao-texto {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Reposicionar o Snoopy */
+
+    .snoopy-caixa {
+        width: 220px;
+        height: 220px;
+
+        transform: none;
+
+        justify-self: center;
+        margin: 10px auto 0;
+
+        pointer-events: none;
+    }
+
+    /* Ajustar o tamanho do GIF */
+
+    .snoopy-caixa img {
+        width: 350px;
+        height: 350px;
+
+
+        object-fit: contain;
+    }
+
+    /* Garantir que o botão receba os cliques */
+
+    .botao-xp {
+        position: relative;
+        z-index: 3;
+    }
+
+}
+/* AUMENTAR O SNOOPY APENAS NO CELULAR */
+
+@media (max-width: 650px) {
+
+    .snoopy-caixa {
+        width: 100%;
+        height: 320px;
+
+        transform: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 30px auto 0;
+
+        pointer-events: none;
+    }
+
+    .snoopy-caixa img {
+        width: 220px;
+        height: auto;
+
+        max-width: none;
+        max-height: none;
+
+        transform: scale(1.5);
+    }
+
+}
