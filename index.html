@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1689d2">
+  <title>esterOS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Paisagem decorativa ao fundo -->
+  <div class="paisagem" aria-hidden="true">
+    <div class="sol"></div>
+    <div class="nuvem nuvem-1"></div>
+    <div class="nuvem nuvem-2"></div>
+    <div class="nuvem nuvem-3"></div>
+    <div class="colina colina-1"></div>
+    <div class="colina colina-2"></div>
+  </div>
+
+  <div class="desktop">
+    <header class="etiqueta">
+    <img src="imagens/port.png" 
+         alt="" 
+         class="icone-portfolio">
+
+    <span>meu portfólio :)</span>
+</header>
+
+    <div class="area-de-trabalho">
+      <!-- Os atalhos ficam em uma coluna separada das janelas -->
+        <nav class="atalhos" aria-label="Atalhos do portfólio">
+
+    <!-- INÍCIO -->
+    <a class="atalho" href="#inicio" data-abrir="inicio">
+        <img src="imagens/inicio.png" class="icone" alt="">
+        <span>Início</span>
+    </a>
+
+    <!-- PROJETOS -->
+    <a class="atalho" href="#projetos" data-abrir="projetos">
+        <img src="imagens/projetos.png" class="icone" alt="">
+        <span>Projetos</span>
+    </a>
+
+    <!-- SOBRE -->
+    <a class="atalho" href="#sobre" data-abrir="sobre">
+        <img src="imagens/sobre.png" class="icone" alt="">
+        <span>Sobre</span>
+    </a>
+
+    <!-- CONTATO -->
+    <a class="atalho" href="#contato" data-abrir="contato">
+        <img src="imagens/contatos.png" class="icone" alt="">
+        <span>Contato</span>
+    </a>
+
+</nav>
+
+      <main class="janelas">
+        <!-- JANELA: INÍCIO -->
+        <section class="janela" id="inicio">
+          <div class="barra-janela">
+           <span class="titulo-janela">
+    <img src="imagens/inicio.png" alt="">
+     <span class="nome-janela">portfolio.exe</span>
+</span>
+            <div class="controles-janela">
+              <button type="button" data-minimizar title="Minimizar Início" aria-label="Minimizar Início">—</button>
+              <button type="button" data-fechar title="Fechar Início" aria-label="Fechar Início">×</button>
+            </div>
+          </div>
+          <div class="conteudo-janela apresentacao">
+            <div class="apresentacao-texto">
+              <p class="saudacao">★ Conheça a minha versão criativa como</p>
+              <h1>Motion Designer<br>&amp; Video Editor</h1>
+              <p>Seja bem-vindo!</p>
+              <a class="botao-xp" href="#projetos" data-abrir="projetos">
+    <img src="imagens/projetos.png" alt="">
+    Abrir projetos
+</a>
+            </div>
+            <div class="snoopy-caixa">
+              <img src="imagens/snoopy.gif" alt="Snoopy animado">
+            </div>
+          </div>
+        </section>
+
+        <!-- JANELA: PROJETOS. FICA VISÍVEL DESDE O INÍCIO. -->
+        <section class="janela" id="projetos" hidden>
+          <div class="barra-janela">
+            <span class="titulo-janela">
+    <img src="imagens/projetos.png" alt="">
+    projetos.zip
+</span>
+            <div class="controles-janela">
+              <button type="button" data-minimizar title="Minimizar Projetos" aria-label="Minimizar Projetos">—</button>
+              <button type="button" data-fechar title="Fechar Projetos" aria-label="Fechar Projetos">×</button>
+            </div>
+          </div>
+          <div class="conteudo-janela">
+            <div class="topo-pasta">
+              <h2>Meus arquivos criativos ✦</h2>
+            </div>
+            <div class="grade-projetos">
+
+
+              <!-- MOTION DESIGN -->
+
+              <a href="#motion" class="projeto" data-abrir="motion">
+<div class="capa capa-1">
+    <img src="imagens/capa-grafico.jpg" alt="Capa Motion Design">
+</div>
+
+                <h3>Motion Design</h3>
+
+              </a>
+
+
+              <!-- DESIGN GRÁFICO -->
+
+              <a href="#design" class="projeto" data-abrir="design">
+
+                 <div class="capa capa-2">
+    <img src="imagens/snoopu.jpg" alt="Capa Design Gráfico">
+</div>
+
+                <h3>Design Gráfico</h3>
+
+              </a>
+
+
+              <!-- EDIÇÃO DE VÍDEOS -->
+
+              <a href="#videos" class="projeto" data-abrir="videos">
+
+                 <div class="capa capa-3">
+    <img src="imagens/capa-video.jpg" alt="Capa Edição de Vídeos">
+</div>
+
+                <h3>Edição de Vídeos</h3>
+
+              </a>
+
+            </div>
+          </div>
+        </section>
+        <!-- JANELA: EDIÇÃO DE VÍDEOS -->
+
+        <section class="janela" id="videos" hidden>
+
+          <div class="barra-janela">
+
+            <span class="titulo-janela">
+    <img src="imagens/projetos.png" alt="">
+   videos.mp4
+</span>
+
+            <div class="controles-janela">
+
+              <button type="button" data-minimizar>—</button>
+
+              <button type="button" data-fechar>×</button>
+
+            </div>
+
+          </div>
+
+
+          <div class="conteudo-janela">
+             <h2>Edição de Vídeos ✦</h2>
+
+            <div class="galeria-trabalhos">
+
+              <!-- VÍDEO 01 -->
+
+              <article class="arquivo-trabalho">
+             
+                <h3>Vlog Curitiba</h3>
+
+                <p> ★ Feito no CapCut</p>
+
+                <iframe
+    src="https://www.youtube.com/embed/IHDqKio4C1c"
+    title="Vlog Curitiba"
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+              </article>
+
+
+              <!-- VÍDEO 02 -->
+
+              <article class="arquivo-trabalho">
+
+                <h3>Edit Arthur Morgan</h3>
+
+                <p> ★ Feito no After Effects</p>
+
+                <iframe
+    src="https://www.youtube.com/embed/F2QK6tJxKR8"
+    title="Edit Arthur Morgan"
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+              </article>
+             <article class="arquivo-trabalho">
+
+                <h3>Vlog USA</h3>
+
+              <p>★ Feito no CapCut</p>
+
+               <iframe
+    src="https://www.youtube.com/embed/mIyR02XbJKg"
+    title="Vlog USA"
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+              </article>
+
+            </div>
+
+          </div>
+        </section>
+          <!-- JANELA: DESIGN GRÁFICO -->
+
+          <section class="janela" id="design" hidden>
+
+            <div class="barra-janela">
+
+              <span class="titulo-janela">
+    <img src="imagens/projetos.png" alt="">
+    design.psd
+</span>
+
+              <div class="controles-janela">
+
+                <button type="button" data-minimizar>—</button>
+
+                <button type="button" data-fechar>×</button>
+
+              </div>
+
+            </div>
+
+
+            <div class="conteudo-janela">
+
+              <h2>Design Gráfico ✦</h2>
+
+
+              <div class="galeria-trabalhos">
+
+                <article class="arquivo-trabalho">
+                    <h3>Post de Instagram</h3>
+                    <p>★ Design para empresas</p>
+                  <button type="button" class="abrir-galeria" data-galeria="slides-acqualip" data-titulo="Post de Instagram">
+                    <img src="imagens/acqualip.png" alt="Capa do conjunto de artes para Instagram">
+
+                  </button>
+                  <div id="slides-acqualip" hidden>
+                    <img src="imagens/acqualip.png" alt="Feed 1">
+                    <img src="imagens/horarios.png" alt="Arte horários de funcionamento">
+                    <img src="imagens/anuncio.png" alt="Feed 2">
+                    <img src="imagens/palmeiras.png" alt="Feed 2">
+                  </div>
+                </article>
+
+                <article class="arquivo-trabalho">
+                   <h3>Folder de divulgação</h3>
+                    <p>★ Design para hotéis</p>
+                  <button type="button" class="abrir-galeria" data-galeria="slides-olympia" data-titulo="Folder de divulgação">
+                    <img src="imagens/olympia1.png" alt="Capa do folder de divulgação">
+                   
+                  </button>
+                  <div id="slides-olympia" hidden>
+                    <img src="imagens/olympia1.png" alt="Folder de divulgação">
+                    <img src="imagens/olympia2.png" alt="Segunda arte do folder">
+                    <!-- Se tiver mais artes da mesma coleção, adicione:
+                    <img src="imagens/olympia2.png" alt="Segunda arte do folder">
+                    -->
+                  </div>
+                </article>
+
+                 <article class="arquivo-trabalho">
+                    <h3>Identidade Visual</h3>
+                    <p>★ Design criativo</p>
+                  <button type="button" class="abrir-galeria" data-galeria="slides-mosquinhas" data-titulo="Identidade Visual">
+                    <img src="imagens/1.png" alt="Capa da identidade visual">
+                  </button>
+                  <div id="slides-mosquinhas" hidden>
+                    <img src="imagens/1.png" alt="Identidade Visual">
+                    <img src="imagens/2.png" alt="Identidade Visual">
+                    <img src="imagens/3.png" alt="Identidade Visual">
+                    <img src="imagens/4.gif" alt="Identidade Visual">
+                  </div>
+                </article>
+
+              </div>
+
+            </div>
+          </section>
+            <!-- JANELA: MOTION DESIGN -->
+
+            <section class="janela" id="motion" hidden>
+
+              <div class="barra-janela">
+
+                <span class="titulo-janela">
+    <img src="imagens/projetos.png" alt="">
+    motion.aep
+</span>
+
+                <div class="controles-janela">
+
+                  <button type="button" data-minimizar>—</button>
+
+                  <button type="button" data-fechar>×</button>
+
+                </div>
+
+              </div>
+
+
+              <div class="conteudo-janela">
+
+                <h2>Motion Design ✦</h2>
+
+
+                <div class="galeria-trabalhos">
+                
+
+                  <article class="arquivo-trabalho">
+                    <h3>Logo política</h3>
+
+                    <p>★ Feito no After Effects</p>
+
+                    <video controls preload="metadata" playsinline>
+
+                      <source src="videos/motion.mp4" type="video/mp4">
+
+                    </video>
+
+
+                  </article>
+
+                </div>
+
+              </div>
+
+            </section>
+
+        <!-- JANELA: SOBRE -->
+        <section class="janela" id="sobre" hidden>
+          <div class="barra-janela">
+           <span class="titulo-janela">
+    <img src="imagens/sobre.png" alt="">
+    sobre_mim.txt
+</span>
+            <div class="controles-janela">
+              <button type="button" data-minimizar title="Minimizar Sobre" aria-label="Minimizar Sobre">—</button>
+              <button type="button" data-fechar title="Fechar Sobre" aria-label="Fechar Sobre">×</button>
+            </div>
+          </div>
+          <div class="conteudo-janela texto-janela">
+            <h2>Quem sou eu?</h2>
+            <p>Sou uma aventureira no mundo do design gráfico, gosto de explorar novas ideias e transformar elas em
+              experiências visuais.
+            </p>
+            <p><strong>Programas favoritos:</strong> After Effects, Canva e CapCut ★</p>
+          </div>
+        </section>
+
+        <!-- JANELA: CONTATO -->
+        <section class="janela" id="contato" hidden>
+          <div class="barra-janela">
+            <span class="titulo-janela">
+    <img src="imagens/contatos.png" alt="">
+    contato.msg
+</span>
+            <div class="controles-janela">
+              <button type="button" data-minimizar title="Minimizar Contato" aria-label="Minimizar Contato">—</button>
+              <button type="button" data-fechar title="Fechar Contato" aria-label="Fechar Contato">×</button>
+            </div>
+          </div>
+          <div class="conteudo-janela texto-janela">
+            <h2>Me mande uma mensagem!</h2>
+            <p>★ E-mail: <strong>estersanlopes@gmail.com</strong></p>
+            <p>★ Instagram: <strong>@esterslopess</strong></p>
+            <p>★ GitHub: <strong>iammrbluesky</strong></p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Barra inferior: não duplica os atalhos da lateral -->
+  <footer class="barra-tarefas">
+    <button class="botao-iniciar" id="botaoIniciar" type="button" aria-expanded="false" aria-controls="menuIniciar">🌐
+      Iniciar</button>
+    <div class="tarefas-abertas" id="tarefasAbertas">
+      <!-- Os botões das janelas serão criados pelo JavaScript -->
+    </div>
+    <span class="estado">🟢 Online</span>
+  </footer>
+
+  <div class="menu-iniciar" id="menuIniciar" hidden>
+    <strong>★ Bem-vindo ao esterOS!</strong>
+    <p>Use os ícones à esquerda para explorar as janelas do portfólio.</p>
+  </div>
+
+  <!-- VISUALIZADOR DE IMAGENS, COM CARROSSEL -->
+  <dialog id="visualizador" class="visualizador" aria-labelledby="visualizadorTitulo">
+    <div class="barra-janela">
+      <span id="visualizadorTitulo">🖼️ Visualizador de imagens</span>
+      <div class="controles-janela">
+        <button type="button" id="fecharVisualizador" aria-label="Fechar visualizador">×</button>
+      </div>
+    </div>
+    <div class="visualizador-conteudo">
+      <button class="navegar-slide" id="slideAnterior" type="button" aria-label="Imagem anterior">❮</button>
+      <figure class="visualizador-figura">
+        <img id="imagemAmpliada" class="visualizador-imagem" alt="">
+        <figcaption id="contadorSlides" aria-live="polite"></figcaption>
+      </figure>
+      <button class="navegar-slide" id="slideProximo" type="button" aria-label="Próxima imagem">❯</button>
+    </div>
+  </dialog>
+</body>
+
+</html>
